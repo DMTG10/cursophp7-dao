@@ -30,9 +30,16 @@ require_once("config.php");
 
 
 //Alterando dados
+//$usuario = new Usuario();
+//$usuario->loadByID(4);
+//$usuario->update("Farmeti","merda");
+//echo $usuario;
+
+//Deletar usuario
+
 $usuario = new Usuario();
-$usuario->loadByID(4);
-$usuario->update("Farmeti","merda");
-echo $usuario;
+$usuario->loadByID(7);
+$usuario->delete();
+echo($usuario);
 
 ?>
